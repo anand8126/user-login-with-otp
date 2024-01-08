@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    background-image: url("/imgs/bg-img.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.project-title h4{
+    margin-bottom: -50px;
+    text-align: center;
+    color:  rgb(147, 20, 220);
+    font-size: 40px;
+    padding-top: 50px;
+    font-weight: 400;
+}
+
+fieldset {
+  margin: 80px 3px 6px 480px;
+  display: math;
+  padding: 10px 50px;
+  border-radius: 4px;
+  border: 2px solid rgb(147, 20, 220);
+  
+}
+
+legend{
+    color: green;
+}
+
+input {
+  padding-left: 6px;
+  height: 35px;
+  margin: 15px 0px;
+  width: 100%;
+  border: 1px solid rgb(147, 20, 220);
+  border-radius: 4px;
+}
+
+input::placeholder{
+    color: rgb(147, 20, 220);
+}
+.captcha-section {
+  display: flex;
+  align-items: center;
+}
+
+.captcha-btn,
+#code,
+label {
+  padding-inline: 10px;
+  color:rgb(147, 20, 220);
+}
+
+button.login {
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    background:linear-gradient( green, rgb(147, 20, 220));
+    padding: 7px 17px;
+}
+
+.created h6{
+    padding-top: 50px;
+    text-align: center;
+    color:  rgb(147, 20, 220);
+    font-size: 20px;
+}

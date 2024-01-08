@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login with Captcha Code</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- fontawesome pro trick start -->
+
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-8d95b745961f6b33ab3aa1b98a45291a.css?vsn=d"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+    />
+    <!-- fontawesome end -->
+  </head>
+  <body onload="bodyload()">
+  <div class="main">
+    <div class="project-title">
+      <h4>User login With OTP Tools </h4>
+    </div>
+    <fieldset>
+      <legend> <i class="fa-duotone fa-user"></i> User Login</legend>
+      <h3 id="message"></h3>
+      <form class="form-section">
+        <input
+          type="text"
+          class="from-control"
+          id="username"
+          placeholder="Enter your username *"
+        />
+        <input
+          type="password"
+          class="from-control"
+          id="password"
+          placeholder="Enter your password *"
+        />
+        <div class="captcha-section">
+          <label for="">Captcha:</label> <strong><p id="code"></p> </strong
+          ><button class="captcha-btn" onclick="getNewCode()" type="button">
+            <i class="fa-sharp fa-solid fa-arrows-rotate"></i>
+          </button>
+        </div>
+        <input
+          type="text"
+          class="from-control"
+          id="enterCaptcha"
+          placeholder="Captcha code * "
+        />
+        <div class="login-btn">
+          <button type="button" class="login" onclick="loginClick()">Login</button>
+        </div>
+      </form>
+
+    </fieldset>
+    <div class="created">
+      <h6>CREATED BY @ Anand Prakash Chaudhary</h6>
+    </div>
+  </div>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
